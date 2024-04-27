@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5431/hse_sc
+    username: postgres-user
+    password: postgres-password
+    driver-class-name: org.postgresql.Driver
+
+  cloud:
+    openfeign:
+      client:
+        config:
+          movies-info:
+            url: http://www.omdbapi.com
+
+#  h2:
+#    console.enabled: true
