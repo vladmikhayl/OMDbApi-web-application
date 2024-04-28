@@ -18,4 +18,21 @@ data class MoviesList(
     @JsonProperty("Response")
     @Schema(description = "Статус ответа")
     var response: String
-)
+) {
+    override fun toString(): String {
+        var result = "{\n" +
+                "  \"Search\": ["
+        for (movie in search) {
+            val movieString = movie.toString()
+            for (string in movieString.split('\n')) {
+                result += "\n    $string"
+            }
+            result += ","
+        }
+        result += "\n  ],\n" +
+                "  \"totalResults\": \"$totalResults\",\n" +
+                "  \"Response\": \"$response\"\n" +
+                "}"
+        return result
+    }
+}

@@ -26,4 +26,14 @@ data class Movie(
     @JsonProperty("Poster")
     @Schema(description = "Ссылка на постер")
     var poster: String
-)
+) {
+    override fun toString(): String {
+        return "{\n" +
+                "  \"Title\": \"$title\",\n" +
+                "  \"Year\": \"$year\",\n" +
+                "  \"imdbID\": \"$imdbID\",\n" +
+                "  \"Type\": \"$type\",\n" +
+                "  \"Poster\": \"$poster\",\n" +
+                "}"
+    }
+}

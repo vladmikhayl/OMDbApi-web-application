@@ -22,7 +22,7 @@ interface MoviesApi {
             defaultValue = "The Shawshank Redemption"
         )
         title: String
-    ): Movie
+    ): Any?
 
     @Tag(name = "Получить фильм/сериал по ID")
     @ApiResponses(
@@ -37,7 +37,7 @@ interface MoviesApi {
             defaultValue = "tt15398776"
         )
         id: String
-    ): Movie
+    ): Any?
 
     @Tag(name = "Получить список фильмов/сериалов по названию")
     @ApiResponses(
@@ -52,7 +52,7 @@ interface MoviesApi {
             defaultValue = "Terminator"
         )
         title: String
-    ): MoviesList
+    ): Any?
 
     @Tag(name = "Получить сериал по названию и году выхода")
     @ApiResponses(
@@ -72,7 +72,7 @@ interface MoviesApi {
             defaultValue = "1994"
         )
         year: String
-    ): Movie
+    ): Any?
 
     @Tag(name = "Получить список сериалов по названию и году выхода")
     @ApiResponses(
@@ -92,6 +92,6 @@ interface MoviesApi {
             defaultValue = "1994"
         )
         year: String
-    ): MoviesList
+    ): Any?
 
 }
