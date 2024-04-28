@@ -1,7 +1,6 @@
 package org.hse.template.controller
 
 import org.hse.template.api.MoviesApi
-import org.hse.template.client.rest.api.MoviesClient
 import org.hse.template.service.MoviesService
 import org.springframework.web.bind.annotation.*
 

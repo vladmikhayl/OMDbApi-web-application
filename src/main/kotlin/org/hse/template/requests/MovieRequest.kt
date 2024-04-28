@@ -1,7 +1,6 @@
 package org.hse.template.requests
 
 import jakarta.persistence.*
-import jakarta.validation.constraints.Size
 import org.hse.template.client.rest.model.Movie
 import org.hse.template.client.rest.model.MoviesList
 

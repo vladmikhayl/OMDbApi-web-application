@@ -1,8 +1,6 @@
 package org.hse.template.service
 
 import org.hse.template.client.rest.api.MoviesClient
-import org.hse.template.client.rest.model.Movie
-import org.hse.template.client.rest.model.MoviesList
 import org.hse.template.repository.MovieRequestsRepository
 import org.hse.template.requests.MovieRequest
 import org.springframework.stereotype.Service
